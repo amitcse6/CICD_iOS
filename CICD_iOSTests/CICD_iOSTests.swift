@@ -9,13 +9,14 @@ import XCTest
 @testable import CICD_iOS
 
 class CICD_iOSTests: XCTestCase {
+    
+    var viewModel = StudentViewModel()
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel = StudentViewModel()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testExample() throws {
@@ -31,6 +32,11 @@ class CICD_iOSTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testTotalStudent() throws {
+        viewModel.fetchAllStudent(50)
+        XCTAssertEqual(viewModel.students.count, 50)
     }
 
 }
