@@ -4,21 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-CICD_iOS-CICD_iOSUITests.xcscheme_^#shared#^_</key>
+		<key>Pods-CICD_iOS-CICD_iOSUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-CICD_iOS.xcscheme_^#shared#^_</key>
+		<key>Pods-CICD_iOS.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-CICD_iOSTests.xcscheme_^#shared#^_</key>
+		<key>Pods-CICD_iOSTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>
