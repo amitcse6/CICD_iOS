@@ -1,6 +1,6 @@
 # environment setup
 os: osx
-osx_image: xcode11.1
+osx_image: xcode 15.2
 language: swift
 
 # env:
@@ -9,13 +9,16 @@ language: swift
 #   - 'DEVELOPER_NAME="iPhone Distribution: {your_name} ({code})"'
 #   - PROFILE_NAME="Football_Pankha_Development"
 
-script: xcodebuild
+# script: xcodebuild clean build
   # - xctool -workspace CICD_iOS.xcworkspace -scheme CICD_iOS -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   # - xctool test -workspace CICD_iOS.xcworkspace -scheme CICD_iOSTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   # For Build
   # xcodebuild clean build -workspace CICD_iOS.xcworkspace -scheme CICD_iOS -sdk iphonesimulator -destination "platform=iOS Simulator,OS=17.2,name=iPhone 15" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
   # For Test Case
   # xcodebuild test -workspace CICD_iOS.xcworkspace -scheme CICD_iOSTests -sdk iphonesimulator -destination "platform=iOS Simulator,OS=17.2,name=iPhone 15" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+
+script: xcodebuild clean build -workspace CICD_iOS.xcworkspace -scheme CICD_iOS -sdk iphonesimulator -destination "platform=iOS Simulator,OS=17.2,name=iPhone 15" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+
 
 
 
